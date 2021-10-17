@@ -14,10 +14,11 @@ Project structure:
   - folder to hold all other logic, for example scraping VLR for player data, etc
 - config
   - contains keys and passwords etc for database. Main file in here will be keys.js, and will not be committed to git for security reasons, if you make a change send it in discord so everyone has it.
+- client
+  - contains frontend of the application (see readme within client folder for more details)
 
 General Project Guildelines:
+
 - Make all changes on separate branch associated with task card in the project organization board(create new branch with "git checkout -b {branch name}" (without the curly braces))
-- Once done, let me know and I'll merge it in and move the card to merged
+- Once done, create pull request and add me as a reviewer and I'll merge it in and move the card to merged
 - DO NOT TOUCH MAIN/MASTER BRANCH
-
-
