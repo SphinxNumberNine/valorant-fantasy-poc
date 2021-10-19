@@ -22,3 +22,4 @@ General Project Guildelines:
 - Make all changes on separate branch associated with task card in the project organization board(create new branch with "git checkout -b {branch name}" (without the curly braces))
 - Once done, create pull request and add me as a reviewer and I'll merge it in and move the card to merged
 - DO NOT TOUCH MAIN/MASTER BRANCH
+- When you first clone the repo, run `npm install` to install required packages
