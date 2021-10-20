@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/SphinxNumberNine/valorant-fantasy-poc#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "@types/react-router-dom": "^5.3.1",
+    "express": "^4.17.1",
+    "material-paper": "0.0.8"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
