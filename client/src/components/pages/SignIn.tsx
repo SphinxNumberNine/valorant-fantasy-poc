@@ -12,14 +12,18 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import './Sign.css';
+import { StylesContext } from '@material-ui/styles';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    paddingTop: theme.spacing(8),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    background: "#282c34",
+    opacity: "100%",
+    padding: "30px",
+    borderRadius: "15px",
   },
   avatar: {
     margin: theme.spacing(1),
@@ -36,6 +40,13 @@ const useStyles = makeStyles((theme) => ({
     width: theme.spacing(15),
     height: theme.spacing(15),
   },
+  backgroundContainer: {
+    backgroundImage: `url(https://i.imgur.com/DRM6nkf.jpg)`,
+    position: "fixed",
+    backgroundRepeat: "no-repeat",
+    maxWidth: "xs",
+    backgroundSize: "100%"
+  }
 }));
 
 export default function SignIn() {
@@ -65,7 +76,7 @@ export default function SignIn() {
       console.log("Failed to log in.");
     });
   }
-  document.body.style.background = "url(https://i.imgur.com/DRM6nkf.jpg) no-repeat fixed center center";
+  //document.body.style.background = "url(https://i.imgur.com/DRM6nkf.jpg) center center/cover fixed no-repeat";
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />

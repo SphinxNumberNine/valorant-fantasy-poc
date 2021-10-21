@@ -12,14 +12,17 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { PromiseProvider } from 'mongoose';
-import './Sign.css';
 
 const useStyles = makeStyles((theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    paddingTop: theme.spacing(8),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    background: "#282c34",
+    opacity: "100%",
+    padding: "30px",
+    borderRadius: "15px",
   },
   avatar: {
     margin: theme.spacing(1),
@@ -69,7 +72,7 @@ export default function SignUp(props) {
     props.history.push("/");
   }
 
-  document.body.style.background = "url(https://i.imgur.com/bpfDOdt.jpg) no-repeat fixed center center";
+  // document.body.style.background = "url(https://i.imgur.com/bpfDOdt.jpg) no-repeat fixed center center";
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
