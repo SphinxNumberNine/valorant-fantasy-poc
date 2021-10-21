@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -20,9 +22,12 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^6.0.11",
-    "mongoose-double": "0.0.1"
+    "mongoose-double": "0.0.1",
+    "@types/react-router-dom": "^5.3.1",
+    "material-paper": "0.0.8"
   },
   "devDependencies": {
+    "concurrently": "^6.3.0",
     "nodemon": "^2.0.13"
   }
 }
